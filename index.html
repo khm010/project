@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동물농장</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">    
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <h1>동물농장</h1>
+        </a>
+      </div>
+      <nav>
+        <ul id="topMenu">
+          <li><a href="#">육상동물 <span>▼</span></a>
+            <ul>
+              <li><a href="#">사자</a></li>
+              <li><a href="#">코끼리</a></li>
+              <li><a href="#">기린</a></li>
+              <li><a href="#">고릴라</a></li>
+              <li><a href="#">치타</a></li>
+              <li><a href="#">호랑이</a></li>
+              <li><a href="#">얼룩말</a></li>
+              <li><a href="#">오랑우탄</a></li>
+            </ul>
+          </li>
+          <li><a href="#">해상동물 <span>▼</span></a>
+            <ul>
+              <li><a href="#">고래</a></li>
+              <li><a href="#">열대어</a></li>
+              <li><a href="#">바다표범</a></li>
+              <li><a href="#">해달</a></li>
+              <li><a href="#">바다거북이</a></li>
+            </ul>
+          </li>
+          <li><a href="#">갤러리</a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="slideShow">
+      <div id="slides">
+        <img src="images/코끼리.webp" alt="">
+        <img src="images/바다거북이.jpg" alt="">
+        <img src="images/오랑우탄.webp" alt="">
+        <button id="prev">&lang;</button>
+        <button id="next">&rang;</button>
+      </div>
+    </div>
+    <div id="contents">
+      <div id="tabMenu">
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label for="tab1">공지사항</label>
+        <input type="radio" id="tab2" name="tabs">
+        <label for="tab2">갤러리</label>      
+        <div id="notice" class="tabContent">
+          <h2>공지사항 내용입니다.</h2>
+          <ul>            
+            <li>우리 농장은 동물들을 방생하여 손님과의 시간을 보내게 합니다</li>
+            <li>베이비들 돌아다니다 호랑이에게 잡아먹힐 수 있으니 조심</li>
+            <li>(!이벤트!)사자와 1:1 매치.승리시 상금 5억원 지급 </li>
+            <li>(!이벤트!)치타와 100M 달리기 경주.승리시 상금 5억원 지급</li>
+            <li>(!이벤트!)고릴라와 팔씨름 1:1시합.승리시 상금 5억원 지급</li>            
+          </ul>
+        </div>
+        <div id="gallery" class="tabContent">
+          <h2>갤러리 내용입니다.</h2>
+          <ul>
+            <li><img src="images/해달.jpg"></li>
+            <li><img src="images/판다.jpg"></li>
+            <li><img src="images/코끼리.jpg"></li>
+            <li><img src="images/치타.jpg"></li>
+            <li><img src="images/오랑우탄.jpg"></li>
+            <li><img src="images/얼룩말.jpg"></li>                     
+          </ul>
+       </div>        
+      </div>
+      <div id="links">
+        <ul>
+          <li>
+            <a href="#">
+              <span id="quick-icon1"></span>
+              <p>동물 밥주기</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span id="quick-icon2"></span>
+              <p>동물 타보기</p>
+            </a>            
+          </li>
+          <li>
+            <a href="#">
+              <span id="quick-icon3"></span>
+              <p>문의하기</p>
+            </a>            
+          </li>
+        </ul>
+      </div>
+    </div>  
+    <footer>    
+      <div id="bottomMenu">
+        <ul>
+          <li><a href="#">회사 소개</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">동물원 수칙</a></li>
+          <li><a href="#">사이트맵</a></li>
+        </ul>
+        <div id="sns">
+          <ul>
+            <li><a href="#"><img src="images/sns-1.png"></a></li>
+            <li><a href="#"><img src="images/sns-2.png"></a></li>
+            <li><a href="#"><img src="images/sns-3.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="company">
+        <p>도로명 대구광역시 북구 대학로 80 (산격동, 경북대학교)</p> 
+      </div>     
+    </footer>  
+  </div> 
+
+  <script src="slideshow.js"></script>
+</body>
+</html>
